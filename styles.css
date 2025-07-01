@@ -1,0 +1,253 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --lightGreen: linear-gradient(45deg,  rgb(28, 95, 10), rgb(44, 151, 14), rgb(35, 94, 20));
+    --orange: rgb(251, 211, 8);
+}
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background: black;
+    color: white;
+}
+main {
+    padding: 30px;
+}
+p {
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    height: 6.5vh;
+    text-align: left;
+    font-size: 2rem;
+}   
+.surname {
+    font-style: normal;
+    background: var(--orange);
+    color: white;
+    padding-inline: 10%;
+    padding-block: 20px;
+    text-decoration: none;
+    font-size: 4.1rem;
+}
+header p {
+    margin: 10px;
+}
+.menu {
+    display: none;
+}
+.content {
+    display: none;
+    position: absolute;
+}
+hr {
+    height: 0.5vh;
+    margin: 1vh 0px;
+    background: var(--lightGreen);
+    border: 1px dashed grey;
+}
+.heading {
+     text-align: left;
+}
+h1 {
+    font-size: 3rem;
+    word-spacing: 6vw;
+}
+span {
+    font-size: 2.5rem;
+    text-align: none;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--orange);
+    margin-block: 10vh;
+    text-transform: uppercase;
+}
+.span {
+    text-align: left;
+}
+.heading h1 {
+    font-size: 5rem;
+    word-spacing: 8vw;
+    letter-spacing: 1vw;
+    width: 90vw;
+}
+.attributes {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    background: var(--lightGreen);
+    color: white;
+    padding: 10px;
+    margin-top: 2vh;
+    border-radius: 5px;
+   
+}
+.dot {
+    background: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+main {
+    padding-block: 5vh;
+}
+img {
+    height: auto;
+    width: 90%;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px rgba(249, 209, 8, 0.278);
+    border-radius: 10px;
+    transition: all 0.8s; 
+    margin: 20px 0px;
+}
+img:hover {
+    scale: 1.05;
+    box-shadow: 6px 6px 6px rgba(249, 209, 8, 0.429);
+    margin: 30px 0px;
+}
+.introduction {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-block: 30px;
+    text-align: justify;  
+}
+.favorite-meal-person {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    margin-block: 30px;
+    text-align: justify;
+}
+.mum {
+    height: 120vh;
+    width: 95%;
+}
+.meal {
+    margin-top: 10vh;
+}
+.journey-so-far {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8vw;
+    text-align: justify;
+}
+.join {
+    display: grid;
+    grid-template-columns: 60% auto;
+    text-align: justify;
+    column-gap: 2vw;
+    margin-top: 30px;
+}
+.favorite-course {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+}
+.extra {
+    text-align: justify;
+}
+.notable {
+    border: 2px solid var(--orange);
+    padding: 20px;
+    width: 50%;
+    margin: 20px 0px;
+}
+.together {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 4vh;
+    padding-inline: 2vw;
+    width: auto;
+    background: var(--lightGreen);
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    transition: all 0.5s;
+}
+a:hover {
+    scale: 1.05;
+    color: var(--orange);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.444);
+}
+@media (max-width: 600px) {
+    .heading h1 {
+        font-size: 2.8rem;
+        display: inline;
+        word-spacing: normal;
+        margin: 20px 0px;
+    }
+    .surname {
+        font-size: 2.8rem;
+        padding-inline: 5%;
+        padding-block: 10px;
+        margin: 0px;
+    }
+    .attributes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        justify-content: start;
+        padding: 10px;
+        margin: 20px 0px;
+    } 
+    .dot {
+        display: none;
+    } 
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    span {
+        font-size: 1.6rem;
+    }
+    .introduction {
+        grid-template-columns: auto;
+    }
+    .favorite-meal-person {
+        grid-template-columns: auto;
+        row-gap: 5%;
+    }
+    .mum {
+        height: 60%;
+    }
+    .journey-so-far {
+        grid-template-columns: auto;
+        margin: 16vh 0px;
+    }
+    .join {
+        grid-template-columns: auto;
+    }
+    .favorite-course {
+        grid-template-columns: 45% auto;
+    }
+    .menu {
+        display: none;
+    }
+    .menu:hover .content {
+        display: grid;
+        background: var(--lightGreen);
+        row-gap: 10vh;
+        padding: 20px;
+        width: 30vw;
+        z-index: 1;
+    }
+    .notable {
+        width: auto;
+    }
+    .together {
+        grid-template-columns: auto;
+    }
+}
